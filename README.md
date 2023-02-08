@@ -1,1 +1,1 @@
-# Zed-Attack-Proxy-IS-IA
+# IS-IA
