@@ -129,23 +129,28 @@ def password_check():
 
 
 window = Tk()
-window.title("Password Manager")
-window.config(padx=50, pady=50)
+window_icon = PhotoImage(file = "./window_icon2.png")
+# window_icon = window_icon.zoom(4, 4)
 
-# logo_img = PhotoImage(file="logo.png")
+window.iconphoto(False, window_icon)
+window.title("CipherSafe")
+window.config(padx=30, pady=30, background="#defcf9")
 
-canvas = Canvas(width=200, height=200)
-# canvas.create_image(100, 100, image=logo_img)
+logo_img = PhotoImage(file="undraw_Vault_re_s4my-removebg-preview.png")
+logo_img = logo_img.subsample(2, 2)  # Scale down the image by a factor of 10
+
+canvas = Canvas(width=250, height=200, background="#defcf9")
+canvas.create_image(100, 100, image=logo_img)
 canvas.grid(row=0, column=1)
 
 # labels
-label_website = Label(text="Website:")
+label_website = Label(text="Website:", background="#defcf9")
 label_website.grid(row=1, column=0, pady=7)
 
-label_email = Label(text="Email/Username:")
+label_email = Label(text="Email/Username:", background="#defcf9")
 label_email.grid(row=2, column=0, pady=7)
 
-label_password = Label(text="Password:")
+label_password = Label(text="Password:", background="#defcf9")
 label_password.grid(row=3, column=0, pady=7)
 
 # enteries
