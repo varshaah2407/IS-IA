@@ -129,14 +129,14 @@ def password_check():
 
 
 window = Tk()
-window_icon = PhotoImage(file = "./window_icon2.png")
+window_icon = PhotoImage(file = "./window_icon.png")
 # window_icon = window_icon.zoom(4, 4)
 
 window.iconphoto(False, window_icon)
 window.title("CipherSafe")
 window.config(padx=30, pady=30, background="#defcf9")
 
-logo_img = PhotoImage(file="undraw_Vault_re_s4my-removebg-preview.png")
+logo_img = PhotoImage(file="vault_bg_removed.png")
 logo_img = logo_img.subsample(2, 2)  # Scale down the image by a factor of 10
 
 canvas = Canvas(width=250, height=200, background="#defcf9")
