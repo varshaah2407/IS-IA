@@ -129,7 +129,7 @@ def password_check():
 
 
 window = Tk()
-window_icon = PhotoImage(file = "./window_icon.png")
+window_icon = PhotoImage(file = "./window_final.png")
 # window_icon = window_icon.zoom(4, 4)
 
 window.iconphoto(False, window_icon)
